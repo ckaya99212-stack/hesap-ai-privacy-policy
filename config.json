@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "versiyon": "2026.1.9",
+    "yayin_tarihi": "2026-01-02",
+    "zorunlu_guncelleme": true,
+    "duyuru_baslik": "Envanter ve Mevzuat Güncellendi",
+    "duyuru_mesaj": "Finansal limitler ve altın milyem oranları veri setine dahil edildi.",
+    "veri_degisim_notu": "Hesaplanan değerler resmi tarife ve piyasa koşullarına göre zamanla değişiklik gösterebilir."
+  },
+
+  "genel_sabitler": {
+    "asgari_ucret_brut": 33030.00,
+    "asgari_ucret_net": 28075.50,
+    "yeniden_degerleme_orani": 18.95,
+    "damga_vergisi_orani": 0.00759,
+    "kidem_tazminati_tavani": 54343.76,
+    "memur_maas_katsayisi": 0.985
+  },
+
+  "finans_parametreleri": {
+    "varsayilan_faizler": {
+      "ihtiyac_kredisi": 3.49,
+      "tasit_kredisi": 3.19,
+      "konut_kredisi": 2.69,
+      "ticari_kredi": 3.69,
+      "kredi_karti_gecikme": 4,99,
+      "kredi_karti_nakit_avans": 4.99,
+      "mevduat_faizi": 39.00,
+      "pos_komisyonu": 3.20
+    },
+    "vergiler": {
+      "kkdf_bireysel": 0.15,
+      "bsmv_bireysel": 0.15,
+      "bsmv_ticari": 0.05,
+      "bsmv_konut": 0.00,
+      "kkdf_konut": 0.00,
+      "mevduat_stopaj_kisa": 0.075,
+      "mevduat_stopaj_orta": 0.05,
+      "mevduat_stopaj_uzun": 0.025,
+      "repo_stopaj": 0.15
+    },
+    "limitler": {
+      "kredi_karti_asgari_limit": 25000,
+      "asgari_odeme_dusuk_oran": 0.20,
+      "asgari_odeme_yuksek_oran": 0.40,
+      "konut_kredisi_erken_kapama_sinir_ay": 36,
+      "dosya_masrafi_orani": 0.005
+    },
+    "altin_milyem": {
+      "ayar_24": 0.995,
+      "ayar_22": 0.916,
+      "ayar_18": 0.750,
+      "ayar_14": 0.585
+    }
+  },
+
+  "vergi_ve_harclar": {
+    "oranlar": {
+      "kira_stopaj": 0.20,
+      "smm_stopaj": 0.20,
+      "kurumlar_vergisi": 0.25,
+      "telefon_kultur": 0.01,
+      "telefon_trt": 0.12,
+      "telefon_otv": 0.50
+    },
+    "damga_vergisi_oranlari": {
+      "standart_binde": 9.48,
+      "kira_kontrati_binde": 1.89,
+      "ihale_karari_binde": 5.69,
+      "maas_bordrosu_binde": 7.59
+    },
+    "emlak_vergisi": {
+      "konut_normal": 0.001,
+      "konut_buyuksehir": 0.002,
+      "isyeri_normal": 0.002,
+      "isyeri_buyuksehir": 0.004,
+      "arsa_normal": 0.003,
+      "arsa_buyuksehir": 0.006,
+      "arazi_normal": 0.001,
+      "arazi_buyuksehir": 0.002,
+      "dkv_muafiyet_siniri": 18914000
+    },
+    "veraset": {
+      "istisna_miras": 2317,
+      "istisna_ivazsiz": 53339
+    },
+    "gelir_vergisi_dilimleri": [
+      { "limit": 190000, "oran": 0.15 },
+      { "limit": 400000, "oran": 0.20 },
+      { "limit": 1500000, "oran": 0.27 },
+      { "limit": 5300000, "oran": 0.35 },
+      { "limit": 9999999999, "oran": 0.40 }
+    ],
+    "pasaport": {
+      "defter_bedeli": 1351.00,
+      "harc_6ay": 2806.50,
+      "harc_1yil": 4103.00,
+      "harc_2yil": 6698.50,
+      "harc_3yil": 9516.00,
+      "harc_3yil_uzeri": 11274.00
+    },
+    "ehliyet": {
+      "degerli_kagit": 1690.00,
+      "vakif_payi": 425.00,
+      "harc_a_sinifi": 2239.90,
+      "harc_b_sinifi": 6754.60,
+      "harc_diger": 11271.20
+    },
+    "arac_ozel": {
+      "mtv_taban_fiyatlar": {
+        "cc_1300": 5750.00,
+        "cc_1600": 10016.00,
+        "cc_1800": 19472.00,
+        "cc_2000": 30679.00
+      },
+      "otv_matrah_limitleri": [
+        { "limit": 184000, "oran": 0.45 },
+        { "limit": 220000, "oran": 0.50 },
+        { "limit": 250000, "oran": 0.60 },
+        { "limit": 280000, "oran": 0.70 },
+        { "limit": 99999999, "oran": 0.80 }
+      ],
+      "otv_muafiyet_limiti": 1591200,
+      "muayene_ucreti": {
+        "otomobil": 3288.00,
+        "kamyon": 4446.00,
+        "motosiklet": 1674.00
+      }
+    },
+    "diger_harclar": {
+      "yurtdisi_cikis_pulu": 1190,01,
+      "imei_kayit_ucreti": 54259,
+      "tapu_harci_orani": 0.04,
+      "ozel_iletisim_vergisi": 0.10,
+      "konaklama_vergisi": 0.02
+    },
+    "cezalar": {
+      "ozel_usulsuzluk_min": 3400,
+      "usulsuzluk_sahis": 1100,
+      "usulsuzluk_sirket": 2200,
+      "gecikme_zammi_aylik": 0.045
+    },
+    "muhasebe_parametreleri": {
+      "sgk_isci_payi": 0.14,
+      "issizlik_isci_payi": 0.01,
+      "yemek_istisnasi_gunluk": 300,
+      "yol_istisnasi_gunluk": 158,
+      "amortisman_siniri": 10000
+    }
+  },
+
+  "sektorel_parametreler": {
+    "emlak": {
+      "komisyon_orani": 0.04,
+      "kira_istisnasi": 58000,
+      "dask_birim_m2": 6000,
+      "aidat_gecikme_orani": 0.05
+    },
+    "hukuk": {
+      "vekalet_ucreti_asliye": 17900,
+      "yasal_faiz_yillik": 24.00,
+      "arabuluculuk_ilk_dilim": 0.06,
+      "uzlastirmaci_taban_ucret": 800,
+      "uzlastirmaci_tarifesi": {
+        "olumsuz": 1185,
+        "olumlu_2_3_kisi": 2370,
+        "olumlu_4_6_kisi": 4740,
+        "olumlu_7_9_kisi": 7110,
+        "olumlu_10_uzeri": 9480
+      },
+      "icra_basvuru_harci": 427.60,
+      "vekalet_icra_oran": 0.16,
+      "vekalet_harci": 60.50,
+      "baro_pulu": 105.00,
+      "tebligat_masrafi": 150.00,
+      "icra_tahsil_harci_oran": 0.0455,
+      "infaz_orani_genel": 0.50,
+      "denetimli_serbestlik_yil": 1,
+      "adli_para_gunluk_min": 20,
+      "adli_para_gunluk_max": 100
+    },
+    "egitim_katsayilari": {
+      "yks_tyt_turkce": 3.3,
+      "yks_tyt_mat": 3.3,
+      "yks_tyt_fen": 3.4,
+      "yks_tyt_sosyal": 3.4,
+      "lgs_ana_ders": 4,
+      "lgs_ara_ders": 1,
+      "obp_katsayi": 0.6
+    },
+    "sigorta": {
+      "trafik_sigorta_tavan": 10000,
+      "istanbul_fark_orani": 0.10,
+      "kasko_ortalama_oran": 0.02,
+      "health_base_tss": 8500,
+      "health_base_oss": 25000,
+      "health_age_factor": 250,
+      "bes_devlet_katkisi_orani": 0.30,
+      "seyahat_avrupa_gunluk": 25,
+      "seyahat_dunya_gunluk": 45,
+      "konut_bina_bedeli_carpan": 0.0012,
+      "konut_esya_bedeli_carpan": 0.0025,
+      "kredi_hayat_yillik_carpan": 0.0085
+    },
+    "insaat": {
+      "tugla_m2_13luk": 32,
+      "tugla_m2_8luk": 24,
+      "boya_m2_litre": 10,
+      "siva_kg_m2_cm": 15
+    },
+    "lojistik": {
+      "kargo_taban_fiyat": 90,
+      "kargo_desi_ek": 20,
+      "taksi_acilis": 40,
+      "taksi_km": 25,
+      "taksi_indi_bindi": 130
+    },
+    "dini_parametreler": {
+      "fitre_bedeli": 230,
+      "nisab_altin_gram": 80.18
+    }
+  },
+
+  "bilim_ve_saglik": {
+    "gebelik_gun_sayisi": 280,
+    "su_ihtiyaci_carpan": 0.033,
+    "protein_sporcu_carpan": 1.8,
+    "ideal_uyku_dongusu_dk": 90,
+    "ses_hizi_ms": 343
+  }
+}
