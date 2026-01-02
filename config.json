@@ -7,7 +7,6 @@
     "duyuru_mesaj": "Finansal limitler ve altın milyem oranları veri setine dahil edildi.",
     "veri_degisim_notu": "Hesaplanan değerler resmi tarife ve piyasa koşullarına göre zamanla değişiklik gösterebilir."
   },
-
   "genel_sabitler": {
     "asgari_ucret_brut": 33030.00,
     "asgari_ucret_net": 28075.50,
@@ -16,14 +15,13 @@
     "kidem_tazminati_tavani": 54343.76,
     "memur_maas_katsayisi": 0.985
   },
-
   "finans_parametreleri": {
     "varsayilan_faizler": {
       "ihtiyac_kredisi": 3.49,
       "tasit_kredisi": 3.19,
       "konut_kredisi": 2.69,
       "ticari_kredi": 3.69,
-      "kredi_karti_gecikme": 4,99,
+      "kredi_karti_gecikme": 4.99,
       "kredi_karti_nakit_avans": 4.99,
       "mevduat_faizi": 39.00,
       "pos_komisyonu": 3.20
@@ -53,7 +51,6 @@
       "ayar_14": 0.585
     }
   },
-
   "vergi_ve_harclar": {
     "oranlar": {
       "kira_stopaj": 0.20,
@@ -128,7 +125,7 @@
       }
     },
     "diger_harclar": {
-      "yurtdisi_cikis_pulu": 1190,01,
+      "yurtdisi_cikis_pulu": 1190.01,
       "imei_kayit_ucreti": 54259,
       "tapu_harci_orani": 0.04,
       "ozel_iletisim_vergisi": 0.10,
@@ -148,7 +145,6 @@
       "amortisman_siniri": 10000
     }
   },
-
   "sektorel_parametreler": {
     "emlak": {
       "komisyon_orani": 0.04,
@@ -220,7 +216,6 @@
       "nisab_altin_gram": 80.18
     }
   },
-
   "bilim_ve_saglik": {
     "gebelik_gun_sayisi": 280,
     "su_ihtiyaci_carpan": 0.033,
