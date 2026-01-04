@@ -1,6 +1,6 @@
 {
   "meta": {
-    "versiyon": "2026.1.10",
+    "versiyon": "2026.1.11",
     "yayin_tarihi": "2026-01-02",
     "zorunlu_guncelleme": false,
     "duyuru_baslik": "Envanter ve Mevzuat Güncellendi",
@@ -17,7 +17,7 @@
   },
   "finans_parametreleri": {
     "varsayilan_faizler": {
-      "ihtiyac_kredisi": 3.49,
+      "ihtiyac_kredisi": 3.39,
       "tasit_kredisi": 3.19,
       "konut_kredisi": 2.69,
       "ticari_kredi": 3.69,
