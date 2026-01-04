@@ -2,7 +2,7 @@
   "meta": {
     "versiyon": "2026.1.12",
     "yayin_tarihi": "2026-01-05",
-    "zorunlu_guncelleme": false,
+    "zorunlu_guncelleme": true,
     "duyuru_baslik": "Envanter ve Mevzuat Güncellendi",
     "duyuru_mesaj": "Finansal limitler ve altın milyem oranları veri setine dahil edildi.",
     "veri_degisim_notu": "Hesaplanan değerler resmi tarife ve piyasa koşullarına göre zamanla değişiklik gösterebilir."
