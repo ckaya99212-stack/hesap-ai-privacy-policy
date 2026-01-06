@@ -1,8 +1,8 @@
 {
   "meta": {
-    "versiyon": "2026.1.13",
+    "versiyon": "2026.1.14",
     "yayin_tarihi": "2026-01-06",
-    "zorunlu_guncelleme": true,
+    "zorunlu_guncelleme": false,
     "duyuru_baslik": "Envanter ve Mevzuat Güncellendi",
     "duyuru_mesaj": "Finansal limitler ve altın milyem oranları veri setine dahil edildi.",
     "veri_degisim_notu": "Hesaplanan değerler resmi tarife ve piyasa koşullarına göre zamanla değişiklik gösterebilir."
@@ -17,11 +17,7 @@
   },
   "finans_parametreleri": {
     "varsayilan_faizler": {
-      "ihtiyac_kredisi": 3.39,
-      "tasit_kredisi": 3.19,
-      "konut_kredisi": 2.69,
-      "ticari_kredi": 3.69,
-      "kredi_karti_gecikme": 4.99,
+           "ihtiyac_kredisi": 3.38,       "tasit_kredisi": 3.18,       "konut_kredisi": 2.68,       "ticari_kredi": 3.68,  "kredi_karti_gecikme": 4.99,
       "kredi_karti_nakit_avans": 4.99,
       "mevduat_faizi": 38.00,
       "pos_komisyonu": 3.20
