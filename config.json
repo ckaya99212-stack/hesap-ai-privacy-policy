@@ -1,7 +1,7 @@
 {
   "meta": {
-    "versiyon": "2026.1.12",
-    "yayin_tarihi": "2026-01-05",
+    "versiyon": "2026.1.13",
+    "yayin_tarihi": "2026-01-06",
     "zorunlu_guncelleme": true,
     "duyuru_baslik": "Envanter ve Mevzuat Güncellendi",
     "duyuru_mesaj": "Finansal limitler ve altın milyem oranları veri setine dahil edildi.",
@@ -91,16 +91,16 @@
     "pasaport": {
       "defter_bedeli": 1351.00,
       "harc_6ay": 2806.50,
-      "harc_1yil": 4103.00,
+      "harc_1yil": 4101.00,
       "harc_2yil": 6698.50,
       "harc_3yil": 9516.00,
-      "harc_3yil_uzeri": 11274.00
+      "harc_3yil_uzeri": 13410.00
     },
     "ehliyet": {
-      "degerli_kagit": 1690.00,
+      "degerli_kagit": 1781.00,
       "vakif_payi": 425.00,
       "harc_a_sinifi": 2239.90,
-      "harc_b_sinifi": 6754.60,
+      "harc_b_sinifi": 6724.00,
       "harc_diger": 11271.20
     },
     "arac_ozel": {
@@ -125,8 +125,8 @@
       }
     },
     "diger_harclar": {
-      "yurtdisi_cikis_pulu": 1190.01,
-      "imei_kayit_ucreti": 54259,
+      "yurtdisi_cikis_pulu": 1250.00,
+      "imei_kayit_ucreti": 54258,
       "tapu_harci_orani": 0.04,
       "ozel_iletisim_vergisi": 0.10,
       "konaklama_vergisi": 0.02
