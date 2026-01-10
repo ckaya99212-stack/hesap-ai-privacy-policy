@@ -1,1 +1,0 @@
-# hesap-ai-privacy-policy
