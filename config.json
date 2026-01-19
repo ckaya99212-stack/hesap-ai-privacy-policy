@@ -1,274 +1,109 @@
 {
   "meta": {
-    "versiyon": "2026.1.15",
-    "yayin_tarihi": "2026-01-10",
+    "versiyon": "2026.5.1",
+    "yayin_tarihi": "2026-01-19",
     "zorunlu_guncelleme": false,
-    "duyuru_baslik": "Envanter ve Mevzuat Güncellendi",
-    "duyuru_mesaj": "Finansal limitler ve altın milyem oranları veri setine dahil edildi.",
-    "veri_degisim_notu": "Hesaplanan değerler resmi tarife ve piyasa koşullarına göre zamanla değişiklik gösterebilir."
+    "duyuru_baslik": "Merkezi Veri Sistemi",
+    "duyuru_mesaj": "Tüm hesaplama katsayıları ve birim fiyatlar güncel piyasa verilerine göre revize edilmiştir.",
+    "kullanici_notu": "HesapBox artık daha dinamik! Verilerimiz periyodik olarak bulut üzerinden güncellenmektedir."
   },
- "genel_sabitler": {
-    "asgari_ucret_brut": 33030.00,
-    "asgari_ucret_net": 28075.50,
-    "yeniden_degerleme_orani": 25.49,
-    "damga_vergisi_orani": 0.00759,
-    "kidem_tazminati_tavani": 54343.76,
-    "memur_maas_katsayisi": 0.985,
-    "sgk_tavan_ucret": 297270.00,
-    "sgk_taban_ucret": 33030.00,
-    "imei_kayit_ucreti": 54258.00,
-    "yurtdisi_cikis_harci": 1250.00,
-    "bedelli_askerlik_ucreti": 242555.00,
-    "emekli_bayram_ikramiyesi": 5000.00,
-    "engelli_vergi_indirimi": {
-      "derece_1": 5900,
-      "derece_2": 3900,
-      "derece_3": 1900
+  "ekonomik_parametreler": {
+    "finans": {
+      "varsayilan_ihtiyac_faizi": 3.49,
+      "varsayilan_tasit_faizi": 3.19,
+      "varsayilan_konut_faizi": 2.69,
+      "varsayilan_mevduat_faizi": 42.0,
+      "kkdf_orani": 0.15,
+      "bsmv_orani": 0.15,
+      "stopaj_kisa_vade": 0.075,
+      "stopaj_orta_vade": 0.05,
+      "stopaj_uzun_vade": 0.025,
+      "damga_vergisi_orani": 0.00759,
+      "kira_artis_ust_siniri": 65.0
+    },
+    "ticaret": {
+      "kdv_genel": 20.0,
+      "kdv_indirimli": 10.0,
+      "smm_stopaj_orani": 20.0,
+      "pazaryeri_varsayilan_komisyon": 15.0,
+      "hedef_kar_marji_varsayilan": 25.0
     }
   },
-  "finans_parametreleri": {
-    "varsayilan_faizler": {
-      "ihtiyac_kredisi": 3.49,
-      "tasit_kredisi": 3.19,
-      "konut_kredisi": 2.69,
-      "mevduat_faizi": 42.00,
-      "kanuni_faiz_yillik": 43.00,
-      "kredi_karti_akdi_faiz": 4.55,
-      "kredi_karti_gecikme": 4.85,
-      "ticari_gecikme_faizi": 55.00,
-      "vergi_gecikme_zammi": 4.50
+  "lojistik_ve_ulasim": {
+    "taksi": {
+      "acilis_ucreti": 40.0,
+      "km_ucreti": 25.0,
+      "indi_bindi_ucreti": 130.0
     },
-    "vergiler": {
-      "kkdf_bireysel": 0.15,
-      "bsmv_bireysel": 0.15,
-      "mevduat_stopaj_kisa": 0.075,
-      "mevduat_stopaj_orta": 0.05,
-      "mevduat_stopaj_uzun": 0.025,
-      "repo_stopaj": 0.15,
-      "ppf_stopaj": 0.075,
-      "kira_vergisi_istisnası": 58000
+    "kargo": {
+      "taban_fiyat": 90.0,
+      "desi_ek_ucret": 20.0,
+      "desi_bolen_kara": 3000,
+      "desi_bolen_hava": 5000
     },
-    "enflasyon": {
-      "tahmini_yillik": 45.00,
-      "kira_artisi_ust_sinir": 65.00
+    "yakit": {
+      "benzin_litre_fiyati": 42.50,
+      "motorin_litre_fiyati": 41.80,
+      "lpg_litre_fiyati": 20.20,
+      "elektrik_kwh_fiyati": 3.0
     }
   },
-  "vergi_ve_harclar": {
-    "gelir_vergisi_dilimleri": [
-      { "limit": 190000, "oran": 0.15 },
-      { "limit": 400000, "oran": 0.20 },
-      { "limit": 1500000, "oran": 0.27 },
-      { "limit": 5300000, "oran": 0.35 },
-      { "limit": 99999999, "oran": 0.40 }
-    ],
-    "muhasebe_parametreleri": {
-      "yemek_istisnasi_gunluk": 300.00,
-      "yol_istisnasi_gunluk": 158.00,
-      "amortisman_siniri": 12000.00,
-      "smm_stopaj_orani": 0.20,
-      "kdv_genel": 0.20,
-      "kdv_indirimli_1": 0.01,
-      "kdv_indirimli_10": 0.10
+  "enerji_ve_cevre": {
+    "elektrik_birim_fiyat_ev": 2.80,
+    "dogalgaz_birim_fiyat_m3": 9.50,
+    "emisyon_faktorleri": {
+      "elektrik_kg_co2_kwh": 0.5,
+      "dogalgaz_kg_co2_m3": 2.0,
+      "benzinli_arac_kg_co2_km": 0.2,
+      "dizel_arac_kg_co2_km": 0.18
     },
-    "pasaport": {
-      "defter_bedeli": 1351.00,
-      "harc_6ay": 2806.50,
-      "harc_1yil": 4103.00,
-      "harc_2yil": 6698.50,
-      "harc_3yil": 9516.00,
-      "harc_10yil": 11274.00
-    },
-    "ehliyet": {
-      "degerli_kagit": 1690.00,
-      "vakif_payi": 425.00,
-      "harc_a_sinifi": 3254.30,
-      "harc_b_sinifi": 6754.60,
-      "harc_d_sinifi": 10560.40
-    },
-    "kimlik_karti": {
-      "kanuni_sure_ici_dogum": 0.00,
-      "kanuni_sure_disi_dogum": 158.00,
-      "degistirme_nedeniyle": 158.00,
-      "kayip_nedeniyle": 316.00
-    },
-    "veraset_ve_intikal": {
-      "istisnalar": {
-        "evlatlik_ve_es_cocuk": 1500000,
-        "sadece_es": 2800000,
-        "ivazsiz_intikal": 40000
-      },
-      "vergi_dilimleri": [
-        { "limit": 1000000, "veraset": 0.01, "ivazsiz": 0.10 },
-        { "limit": 3000000, "veraset": 0.03, "ivazsiz": 0.15 },
-        { "limit": 7500000, "veraset": 0.05, "ivazsiz": 0.20 },
-        { "limit": 15000000, "veraset": 0.07, "ivazsiz": 0.25 },
-        { "limit": 999999999, "veraset": 0.10, "ivazsiz": 0.30 }
-      ]
-    },
-    "mtv_tablosu": {
-      "oto_post_2018": [
-        { "cc_max": 1300, "age_1_3": 5750, "age_4_6": 4010, "age_7_11": 2245, "age_12_15": 1700, "age_16_plus": 600 },
-        { "cc_max": 1600, "age_1_3": 10016, "age_4_6": 7511, "age_7_11": 4355, "age_12_15": 3080, "age_16_plus": 1180 },
-        { "cc_max": 1800, "age_1_3": 17720, "age_4_6": 13850, "age_7_11": 8150, "age_12_15": 4900, "age_16_plus": 1900 },
-        { "cc_max": 2000, "age_1_3": 30679, "age_4_6": 23620, "age_7_11": 13885, "age_12_15": 7534, "age_16_plus": 2975 },
-        { "cc_max": 2500, "age_1_3": 46018, "age_4_6": 34505, "age_7_11": 20300, "age_12_15": 11000, "age_16_plus": 4500 },
-        { "cc_max": 3000, "age_1_3": 64147, "age_4_6": 55760, "age_7_11": 34850, "age_12_15": 18900, "age_16_plus": 7000 },
-        { "cc_max": 4000, "age_1_3": 100760, "age_4_6": 87000, "age_7_11": 51000, "age_12_15": 23000, "age_16_plus": 9000 },
-        { "cc_max": 9999, "age_1_3": 160000, "age_4_6": 120000, "age_7_11": 71000, "age_12_15": 32000, "age_16_plus": 12500 }
-      ],
-      "oto_pre_2018": [
-        { "cc_max": 1300, "age_1_3": 5100, "age_4_6": 3550, "age_7_11": 1980, "age_12_15": 1500, "age_16_plus": 530 },
-        { "cc_max": 1600, "age_1_3": 8900, "age_4_6": 6650, "age_7_11": 3850, "age_12_15": 2700, "age_16_plus": 1050 },
-        { "cc_max": 1800, "age_1_3": 15800, "age_4_6": 12400, "age_7_11": 7300, "age_12_15": 4400, "age_16_plus": 1700 },
-        { "cc_max": 2000, "age_1_3": 27200, "age_4_6": 21000, "age_7_11": 12300, "age_12_15": 6700, "age_16_plus": 2600 }
-      ],
-      "motosiklet": [
-        { "cc_max": 250, "age_1_3": 580, "age_4_6": 435, "age_7_11": 320, "age_12_plus": 120 },
-        { "cc_max": 650, "age_1_3": 1495, "age_4_6": 1120, "age_7_11": 580, "age_12_plus": 320 },
-        { "cc_max": 9999, "age_1_3": 3600, "age_4_6": 2150, "age_7_11": 1495, "age_12_plus": 580 }
-      ]
+    "gunes_enerjisi": {
+      "ortalama_panel_verimi": 0.18,
+      "sistem_kayip_orani": 0.15,
+      "amortisman_elektrik_fiyati": 3.0
     }
   },
-  "sektorel_parametreler": {
-    "hukuk": {
-      "uzlastirmaci_tarifesi": {
-        "teklif_asamasinda_olumsuz": 1200.00,
-        "surec_sonunda_olumsuz": 1800.00,
-        "olumlu_2_3_kisi": 3500.00,
-        "olumlu_4_6_kisi": 4700.00,
-        "olumlu_7_9_kisi": 5900.00,
-        "olumlu_10_uzeri": 7100.00
-      },
-      "aaut_maktu": {
-        "asliye_hukuk": 17900,
-        "sulh_hukuk": 10700,
-        "icra_takibi": 3600,
-        "agir_ceza": 29800,
-        "sulh_ceza": 10000,
-        "idare_durusmali": 22000,
-        "idare_durusmasiz": 11000
-      },
-      "icra_harclari": {
-        "basvuru": 427.60,
-        "pesin_harc_orani": 0.005,
-        "vekalet_harci": 60.50,
-        "baro_pulu": 45.00
-      }
+  "dijital_ve_sanat": {
+    "muzik_pps_usd": {
+      "spotify": 0.004,
+      "apple_music": 0.01,
+      "youtube_music": 0.008,
+      "tidal": 0.0125,
+      "amazon": 0.004,
+      "ortalama": 0.006
     },
-    "emlak": {
-      "dask_birim_m2_maliyet": { "betonarme": 9884, "yigma": 6590, "diger": 6590 },
-      "dask_risk_katsayilari": { "b1": 2.20, "b2": 1.55, "b3": 0.83, "b4": 0.55, "b5": 0.33, "b6": 0.22, "b7": 0.15 },
-      "dask_asgari_primler": { "b1": 1800, "b2": 1550, "b3": 1250, "b4": 950, "b5": 750, "b6": 650, "b7": 550 },
-      "tapu_harci_orani": 0.02,
-      "tapu_doner_sermaye": 2500.00
+    "video_gelir": {
+      "rpm_taban": 10.0,
+      "rpm_tavan": 35.0
     },
-    "lojistik": {
-      "taksi_acilis": 40.00,
-      "taksi_km": 25.00,
-      "taksi_indi_bindi": 130.00,
-      "kargo_taban_fiyat": 90.00,
-      "kargo_desi_ek": 20.00
-    },
-    "otomotiv": {
-      "yakit_fiyatlari_ortalama": { "benzin": 43.50, "motorin": 44.20, "lpg": 22.10, "elektrik_kwh": 2.60 },
-      "ev_verimlilik_kaybi_orani": 0.10
+    "uretim_3d": {
+      "filament_kg_fiyati": 650.0,
+      "yazici_saatlik_watt": 150.0
+    }
+  },
+  "hobi_ve_diy": {
+    "akvaryum": {
+      "balik_basina_litre_kucuk": 1.5,
+      "balik_basina_litre_buyuk": 3.0,
+      "kum_yogunlugu_kg_l": 1.6,
+      "isiti_watt_basina_litre": 1.0
     },
     "insaat_sarfiyat": {
-      "tugla_m2_adet": { "standart_135": 32, "yatay_85": 24, "isi_190": 45, "gazbeton": 7, "briket": 12.5 },
+      "beton_fire_payi": 0.05,
+      "tugla_fire_payi": 0.05,
       "boya_m2_litre": 0.1,
-      "fayans_fire_orani": 0.10,
-      "laminat_fire_orani": 0.05,
-      "demir_birim_agirlik": { "d8": 0.395, "d10": 0.617, "d12": 0.888, "d14": 1.208, "d16": 1.580 }
-    },
-    "dini_parametreler": {
-      "fitre_bedeli": 250.00,
-      "zekat_nisabi_gram_altun": 80.18,
-      "kurban_hisse_max_insan": 7,
-      "altin_milyem": { "a22": 0.916, "a18": 0.750, "a14": 0.585 }
-    },
-    "muzik_telif": {
-      "spotify": 0.004,
-      "apple": 0.01,
-      "youtube": 0.008,
-      "tidal": 0.0125,
-      "amazon": 0.004
+      "alcipan_levha_m2": 3.0,
+      "alcipan_vida_m2": 18.0
     }
   },
-  "bilim_ve_saglik": {
-    "vki_sinirlari": { "zayif": 18.5, "ideal": 24.9, "kilolu": 29.9, "obez_1": 34.9, "obez_2": 39.9 },
-    "aktivite_katsayilari": { "sedanter": 1.2, "hafif": 1.375, "orta": 1.55, "yuksek": 1.725, "atlet": 1.9 },
-    "protein_ihtiyaci_katsayilari": { "sedanter": 0.8, "aktif": 1.4, "sporcu": 1.8 },
-    "su_ihtiyaci_kg_ml": 33,
-    "met_degerleri": { "yuruyus": 3.5, "kosu": 8.0, "bisiklet": 6.0, "yuzme": 7.0, "agirlik": 4.0, "futbol": 7.0 },
-    "alkol_widmark_r": { "erkek": 0.68, "kadin": 0.55 }
-  },
-  "egitim_puanlari": {
-    "yks_katsayilari": {
-      "tyt_taban": 100,
-      "ayt_taban": 100,
-      "obp_carpan": 0.6,
-      "obp_kirik_carpan": 0.3,
-      "tyt_katsayi": 3.3,
-      "ayt_say_katsayi": 4.5
+  "saglik_ve_yasam": {
+    "vki_limitleri": {
+      "zayif": 18.5,
+      "kilolu": 25.0,
+      "obez": 30.0
     },
-    "lgs_katsayilari": {
-      "taban": 100,
-      "tr_mat_fen_carpan": 4.5,
-      "diger_carpan": 1.5,
-      "yanlis_goturme": 3
-    },
-    "kpss_katsayilari": {
-      "lisans_p3_taban": 40,
-      "onlisans_p93_taban": 40,
-      "ortaogretim_p94_taban": 40,
-      "net_carpan": 0.5
-    },
-    "ales_katsayilari": {
-      "taban": 70,
-      "say_soz_carpan": 0.6
-    },
-    "meb_okul_kayit": {
-      "zorunlu_baslangic_ay": 69,
-      "veli_istegi_alt_ay": 66,
-      "erteleme_ust_ay": 71
-    }
-  },
-  "teknik_parametreler": {
-    "direnc_renkleri": {
-      "siyah": 0, "kahve": 1, "kirmizi": 2, "turuncu": 3, "sari": 4, "yesil": 5, "mavi": 6, "mor": 7, "gri": 8, "beyaz": 9
-    },
-    "unit_conversions": {
-      "inch_to_cm": 2.54,
-      "mile_to_km": 1.60934,
-      "lb_to_kg": 0.453592,
-      "galon_to_lt": 3.78541,
-      "hp_to_kw": 0.7457
-    }
-  },
-  "ekstra_veriler": {
-    "lorem_ipsum": "Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz. Kökleri M.Ö. 45 tarihli Klasik Latin edebiyatına kadar uzanan 2000 yıllık bir geçmişi vardır.",
-    "burc_tarihleri": [
-      { "name": "Koç", "start": "03-21", "end": "04-19" },
-      { "name": "Boğa", "start": "04-20", "end": "05-20" },
-      { "name": "İkizler", "start": "05-21", "end": "06-20" },
-      { "name": "Yengeç", "start": "06-21", "end": "07-22" },
-      { "name": "Aslan", "start": "07-23", "end": "08-22" },
-      { "name": "Başak", "start": "08-23", "end": "09-22" },
-      { "name": "Terazi", "start": "09-23", "end": "10-22" },
-      { "name": "Akrep", "start": "10-23", "end": "11-21" },
-      { "name": "Yay", "start": "11-22", "end": "12-21" },
-      { "name": "Oğlak", "start": "12-22", "end": "01-19" },
-      { "name": "Kova", "start": "01-20", "end": "02-18" },
-      { "name": "Balık", "start": "02-19", "end": "03-20" }
-    ],
-    "cin_zodyagi": ["Maymun", "Horoz", "Köpek", "Domuz", "Fare", "Öküz", "Kaplan", "Tavşan", "Ejderha", "Yılan", "At", "Keçi"],
-    "kusaklar": [
-      { "name": "Sessiz Kuşak", "start": 1928, "end": 1945 },
-      { "name": "Baby Boomer", "start": 1946, "end": 1964 },
-      { "name": "X Kuşağı", "start": 1965, "end": 1979 },
-      { "name": "Y Kuşağı", "start": 1980, "end": 1995 },
-      { "name": "Z Kuşağı", "start": 1996, "end": 2010 },
-      { "name": "Alfa Kuşağı", "start": 2011, "end": 2025 }
-    ]
+    "su_ihtiyaci_kg_basi_ml": 33.0,
+    "sigara_paket_adet": 20,
+    "kafein_yari_omur_saat": 5.0
   }
 }
