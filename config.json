@@ -1,109 +1,219 @@
 {
   "meta": {
-    "versiyon": "2026.5.1",
-    "yayin_tarihi": "2026-01-19",
-    "zorunlu_guncelleme": false,
-    "duyuru_baslik": "Merkezi Veri Sistemi",
-    "duyuru_mesaj": "Tüm hesaplama katsayıları ve birim fiyatlar güncel piyasa verilerine göre revize edilmiştir.",
-    "kullanici_notu": "HesapBox artık daha dinamik! Verilerimiz periyodik olarak bulut üzerinden güncellenmektedir."
+    "versiyon": "2026.6.1",
+    "yayin_tarihi": "2026-01-20",
+    "duyuru_mesaj": "HesapBox v5.1 Master Veri Seti yayında. Tüm resmi harçlar ve teknik katsayılar güncellendi."
   },
   "ekonomik_parametreler": {
     "finans": {
       "varsayilan_ihtiyac_faizi": 3.49,
       "varsayilan_tasit_faizi": 3.19,
       "varsayilan_konut_faizi": 2.69,
-      "varsayilan_mevduat_faizi": 42.0,
       "kkdf_orani": 0.15,
       "bsmv_orani": 0.15,
-      "stopaj_kisa_vade": 0.075,
-      "stopaj_orta_vade": 0.05,
-      "stopaj_uzun_vade": 0.025,
       "damga_vergisi_orani": 0.00759,
-      "kira_artis_ust_siniri": 65.0
+      "bes_devlet_katkisi_orani": 0.20,
+      "bes_max_katki_yillik": 240030,
+      "mevduat_stopaj_kisa": 0.075,
+      "mevduat_stopaj_orta": 0.05,
+      "mevduat_stopaj_uzun": 0.025
     },
     "ticaret": {
       "kdv_genel": 20.0,
       "kdv_indirimli": 10.0,
-      "smm_stopaj_orani": 20.0,
-      "pazaryeri_varsayilan_komisyon": 15.0,
-      "hedef_kar_marji_varsayilan": 25.0
+      "kdv_temel": 1.0,
+      "stopaj_orani": 20.0,
+      "gelir_vergisi_dilimleri": [
+        { "limit": 110000, "oran": 0.15 },
+        { "limit": 230000, "oran": 0.20 },
+        { "limit": 580000, "oran": 0.27 },
+        { "limit": 1900000, "oran": 0.35 },
+        { "limit": 999999999, "oran": 0.40 }
+      ]
+    }
+  },
+  "vergi_ve_harclar": {
+    "pasaport": {
+      "defter": 790,
+      "harc_6ay": 1633,
+      "harc_1yil": 2396,
+      "harc_2yil": 3912,
+      "harc_3yil": 5558,
+      "harc_10yil": 7833
+    },
+    "ehliyet": {
+      "degerli_kagit": 1690,
+      "vakif_payi": 425,
+      "harc_b": 6754,
+      "harc_a": 3254,
+      "harc_f": 3254
+    },
+    "kimlik": {
+      "yenileme": 158,
+      "kayip": 316,
+      "dogum_bildirimi": 0
+    },
+    "tasit_mtv": {
+      "katsayi_yas_1_3": 1.0,
+      "katsayi_yas_4_6": 0.7,
+      "katsayi_yas_7_11": 0.4,
+      "katsayi_yas_12_15": 0.25,
+      "taban_motor_1300": 3500,
+      "taban_motor_1600": 6500,
+      "taban_motor_2000": 12000
+    },
+    "gayrimenkul": {
+      "tapu_harci_orani": 0.02,
+      "tapu_doner_sermaye": 2500,
+      "emlak_vergisi_konut": 0.001,
+      "emlak_vergisi_isyeri": 0.002
+    },
+    "diger": {
+      "imei_harci": 54259,
+      "yurtdisi_cikis_harci": 500,
+      "kidem_tazminati_tavani": 35058.58,
+      "adli_para_cezasi_min": 20,
+      "adli_para_cezasi_max": 500
+    }
+  },
+  "insaat_ve_tadilat_sabitleri": {
+    "sarfiyat": {
+      "boya_m2_litre": 0.1,
+      "beton_fire_orani": 0.05,
+      "fayans_fire_orani": 0.1,
+      "parke_fire_orani": 0.05,
+      "tugla_13_5_m2": 32,
+      "tugla_8_5_m2": 24,
+      "gazbeton_m2": 7
+    },
+    "iklimlendirme": {
+      "klima_m2_btu": 400,
+      "klima_kisi_btu": 600
+    },
+    "alcipan": {
+      "levha_m2": 3,
+      "profil_c_metre_m2": 2.2,
+      "profil_u_metre_m2": 0.8,
+      "vida_adet_m2": 18
     }
   },
   "lojistik_ve_ulasim": {
     "taksi": {
-      "acilis_ucreti": 40.0,
-      "km_ucreti": 25.0,
-      "indi_bindi_ucreti": 130.0
+      "acilis_ucreti": 45.0,
+      "km_ucreti": 30.0,
+      "indi_bindi_ucreti": 150.0
     },
     "kargo": {
-      "taban_fiyat": 90.0,
-      "desi_ek_ucret": 20.0,
-      "desi_bolen_kara": 3000,
-      "desi_bolen_hava": 5000
-    },
-    "yakit": {
-      "benzin_litre_fiyati": 42.50,
-      "motorin_litre_fiyati": 41.80,
-      "lpg_litre_fiyati": 20.20,
-      "elektrik_kwh_fiyati": 3.0
+      "taban_fiyat": 110.0,
+      "desi_ek_ucret": 25.0,
+      "desi_bolen": 3000
     }
   },
   "enerji_ve_cevre": {
-    "elektrik_birim_fiyat_ev": 2.80,
-    "dogalgaz_birim_fiyat_m3": 9.50,
-    "emisyon_faktorleri": {
-      "elektrik_kg_co2_kwh": 0.5,
-      "dogalgaz_kg_co2_m3": 2.0,
-      "benzinli_arac_kg_co2_km": 0.2,
-      "dizel_arac_kg_co2_km": 0.18
+    "fiyatlar": {
+      "elektrik_kwh": 3.10,
+      "dogalgaz_m3": 6.50,
+      "benzin_litre": 43.50,
+      "motorin_litre": 44.20
+    },
+    "karbon_emisyon": {
+      "elektrik_kg_co2": 0.5,
+      "dogalgaz_kg_co2": 2.0,
+      "benzin_kg_co2": 0.2,
+      "motorin_kg_co2": 0.25
     },
     "gunes_enerjisi": {
-      "ortalama_panel_verimi": 0.18,
-      "sistem_kayip_orani": 0.15,
-      "amortisman_elektrik_fiyati": 3.0
+      "panel_verim": 0.15,
+      "sistem_kaybi": 0.15
     }
   },
-  "dijital_ve_sanat": {
-    "muzik_pps_usd": {
-      "spotify": 0.004,
-      "apple_music": 0.01,
-      "youtube_music": 0.008,
-      "tidal": 0.0125,
-      "amazon": 0.004,
-      "ortalama": 0.006
+  "saglik_ve_beslenme": {
+    "su_katsayisi_kg": 0.033,
+    "met_degerleri": {
+      "yuruyus": 3.5,
+      "kosu": 8.0,
+      "bisiklet": 6.0,
+      "yuzme": 7.0,
+      "agirlik": 4.0,
+      "futbol": 7.0
     },
-    "video_gelir": {
-      "rpm_taban": 10.0,
-      "rpm_tavan": 35.0
+    "kalori_makro": {
+      "karbonhidrat_yuzde": 0.4,
+      "protein_yuzde": 0.3,
+      "yag_yuzde": 0.3
+    }
+  },
+  "otomotiv_detay": {
+    "lastik": {
+      "km_limit_premium": 65000,
+      "km_limit_standart": 45000,
+      "km_limit_ekonomik": 30000,
+      "yas_limit": 10
     },
-    "uretim_3d": {
-      "filament_kg_fiyati": 650.0,
-      "yazici_saatlik_watt": 150.0
+    "ev_menzil": {
+      "sicaklik_kayip_faktor": 0.015,
+      "hiz_kayip_faktor": 0.008
+    }
+  },
+  "mutfak_ve_gastronomi": {
+    "yogunluklar": {
+      "su": 1.0,
+      "un": 0.55,
+      "seker": 0.85,
+      "yag": 0.92,
+      "pirinc": 0.85,
+      "kakao": 0.50
+    },
+    "olculer": {
+      "cup_ml": 240,
+      "yemek_kasigi_ml": 15,
+      "tatli_kasigi_ml": 10,
+      "cay_kasigi_ml": 5
+    },
+    "parti_planlama": {
+      "icecek_kisi_saat": 0.5,
+      "atistirmalik_kisi": 0.25,
+      "pizza_dilim_kisi": 3
+    }
+  },
+  "dijital_ve_medya": {
+    "veri_tuketimi": {
+      "sd_gb_saat": 1.0,
+      "hd_gb_saat": 3.0,
+      "uhd_gb_saat": 7.0,
+      "ses_gb_saat": 0.15
+    },
+    "reklam_rpm": {
+      "tr_ortalama": 15.0,
+      "en_ortalama": 45.0
     }
   },
   "hobi_ve_diy": {
     "akvaryum": {
-      "balik_basina_litre_kucuk": 1.5,
-      "balik_basina_litre_buyuk": 3.0,
       "kum_yogunlugu_kg_l": 1.6,
-      "isiti_watt_basina_litre": 1.0
+      "isiti_watt_l": 1.0,
+      "balik_cm_l_tropik": 1.5,
+      "balik_cm_l_japon": 3.0
     },
-    "insaat_sarfiyat": {
-      "beton_fire_payi": 0.05,
-      "tugla_fire_payi": 0.05,
-      "boya_m2_litre": 0.1,
-      "alcipan_levha_m2": 3.0,
-      "alcipan_vida_m2": 18.0
+    "3d_baski": {
+      "yazici_watt": 150
+    },
+    "jenerator": {
+      "guc_faktoru": 0.8,
+      "demeraj_katsayisi": 2.0
     }
   },
-  "saglik_ve_yasam": {
-    "vki_limitleri": {
-      "zayif": 18.5,
-      "kilolu": 25.0,
-      "obez": 30.0
-    },
-    "su_ihtiyaci_kg_basi_ml": 33.0,
-    "sigara_paket_adet": 20,
-    "kafein_yari_omur_saat": 5.0
+  "sanat_ve_muzik": {
+    "stream_pps_usd": {
+      "spotify": 0.004,
+      "apple": 0.01,
+      "youtube": 0.008,
+      "tidal": 0.0125
+    }
+  },
+  "genel_sabitler": {
+    "memur_maas_katsayisi": 0.985,
+    "asgari_ucret_brut": 20002.50,
+    "asgari_ucret_net": 17002.12
   }
 }
